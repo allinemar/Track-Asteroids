@@ -1,8 +1,12 @@
 from sqlalchemy import create_engine, Column, String, Integer, Boolean, Float, Date, DateTime
 from sqlalchemy.orm import declarative_base, relationship
 from datetime import date, datetime
+from dotenv import load_dotenv
+import os
 
-db = create_engine("postgresql://postgres:2011@localhost:5432/AsteroidsData")
+load_dotenv()
+
+db = create_engine(os.getenv("DB"))
 Base = declarative_base()
 
 class Asteroid(Base):
