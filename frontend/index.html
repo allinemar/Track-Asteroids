@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Track Asteroids</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="home-page autoBlur">
+        <div class="image-of-the-day">
+            <img id="image-of-the-day" src="img/astronaut.png" alt="Image of the day">
+        </div>
+        <div class="header">
+            <button onClick="location.href='#about'">About</button>
+            <button onclick="location.href='#asteroid-of-the-day'">Asteroid Of The Day</button>
+            <button onclick="location.href='#compare-asteroids'">Compare Asteroids</button>
+        </div>
+        <div class="home-page-title">
+            <h1>Track Asteroids</h1>
+        </div>
+    </div>
+
+    <div class="about autoBlur" id="about">
+        <div class="text">
+            <h1>About This Site</h1>
+            <p>This website uses data from NASA’s <strong>Asteroids – NeoWs API</strong>.</p>
+            <p>The information is updated daily, allowing you to explore details about the asteroids that are currently
+                closest to Earth.</p>
+            <p>You can view data about the nearest asteroid and even compare its size to the <strong>Christ the
+                    Redeemer</strong> statue.</p>
+            <p>Enjoy your exploration!</p>
+        </div>
+    </div>
+    <div clas="container">
+        <div class="asteroids-today autoBlur" id="asteroid-of-the-day">
+            <h1 class="asteroids-today-title">The Nearest Asteroid from Earth Now</h1>
+            <div class="informative-table autoTakeFull">
+                <div class="box" id="name"></div>
+                <div class="box" id="approach-date"></div>
+                <div class="box" id="nearest-distance"></div>
+                <div class="box" id="is-hazardous"></div>
+                <div class="box" id="diameter-min"></div>
+                <div class="box" id="diameter-max"></div>
+                <div class="box" id="magnitude"></div>
+            </div>
+        </div>
+
+        <div class="comparison autoBlur" id="compare-asteroids">
+            <h1>Comparing with Christ the Redeemer</h1>
+            <div class="graph">
+                <label for="asteroid-size">Choose an Asteroid</label>
+                <select id="asteroid-size" name="name">
+                    <option value="" disabled selected hidden selected>Select</option>
+                </select>
+                <div class="comparison-area">
+                    <img src="img/cristo_redentor.png" alt="Cristo Redentor">
+                    <div class="asteroid" id="asteroid-graph"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <h1>Track Asteroids</h1>
+        <div class="links">
+            <a href="https://github.com/allinemar" target="_black"><i class="ri-github-line" autofocus="false"></i></a>
+            <a href="https://www.linkedin.com/in/alline-martins-573ba7244/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            <a href="mailto:allinemartins0104@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
