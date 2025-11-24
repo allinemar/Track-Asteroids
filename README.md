@@ -55,5 +55,5 @@ At the bottom of the page, you’ll find links to:
 ---
 
 # See it working
-![Footer](assets/gif.gif)
+![Footer](assets/gifDemonstration.gif)
 
